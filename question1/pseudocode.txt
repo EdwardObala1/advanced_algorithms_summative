@@ -1,0 +1,11 @@
+This is a linear problem where you have to go through all the elements in the object range and add one valuue with the next one
+to solve this we will use a loop algotithm with the following time o(n) because we will be looping through 
+each object in the range specified and space complexity of o(1)
+as the only value we are changing is the tolal which we are going to be replacing the same variable over and over again
+
+def get_total(value):
+    a totals variable is initialised with zero
+    also initialise a counter to keep track of the number count
+    create a loop here either a while loop or for loop will do
+    the break condition would be if the values are out of the range then the loop is broken
+    it returns the total variable

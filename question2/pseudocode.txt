@@ -1,0 +1,16 @@
+giben a list of grades as array
+
+the algorithsm loops through each value in the array and picks each value up
+    I will then instantiate a new array of integers to hold the new grades
+    within the loop I will have conditions to check if each value is less than 38 if so it stays the same
+    if the number os not lett than 38
+        another set of loops is created that get how many times does 5 divide the value without remainders
+        I will then multiple 5 by the number of times and then add 5 on top this creates an upper value which checks
+        The cpn dition then checks if the difference between the upper value and the grade is less than 3 
+            if it is it rounds it up
+        else
+            it appends the value as is into the new list of grades
+
+The time complexity of this problem is o(n) as using one loop you go through the list once
+the space complexity is o(n) as well as the space taken will grow with the value input
+ 
