@@ -22,3 +22,4 @@ def grading_algorithm(grades):
 
 print(grading_algorithm([33, 44, 55, 88, 71]), "rounded up grades for [33, 44, 55, 88, 71]")
 print(grading_algorithm([33, 38, 44, 55, 88, 71]), "rounded up grades for [33, 38, 44, 55, 88, 71]")
+print(grading_algorithm([73, 67, 38, 33]), "rounded up grades for [73, 67, 38, 33]")
