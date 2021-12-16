@@ -1,0 +1,19 @@
+to get the super digit 
+I will create a function that takes both the digit and concantanation number
+I will multiply the digit input string by the concantanation numbber.
+    I will then create a for loop that loops through the digits
+        in the for loop I will add and total the value of the digits
+
+    create a new if condition that checks if the values is larger than 9
+        if so it returns the recursion of the function with the new total input and 1
+    else:
+        it will return the super digit
+
+
+
+
+the time complexity of this will be o(n) * k which is just o(n) the k represents an inpuut with a reduced size that will be used
+the storage will the constant o(1) as the single variables used for storage will not be growing in size
+this is a linear approach
+
+
