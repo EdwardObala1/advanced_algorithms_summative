@@ -29,7 +29,6 @@ def decryption(encypted, key):
             decrypted += encypted[firstpointer:secondpointer][i] + encypted[secondpointer:][i]
         return decrypted
     else:
-        print(group_length)
         pass
 
 
@@ -41,5 +40,4 @@ print(encryption("Edwarde", 3),' for str - Edwarde')
 print(encryption("Edwardel", 3),' for str - Edwardel')
 
 print(decryption("Pantxli et", 2),' for str - Pantxli et')
-print(decryption("Eaedrwd", 3),' for str - Edwarde')
-print(decryption("Eaedrlwd", 3),' for str - Edwardel')
+

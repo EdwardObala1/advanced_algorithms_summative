@@ -1,29 +1,49 @@
-from collections import defaultdict
-from heapq import heappop, heappush
-import os
+# graph
+import heapq
 
-def shortestReach(n, edges, s):
-    graph = defaultdict(list)
-    for (u, v), w in edges.items():
-        graph[u].append((w, v))
-        graph[v].append((w, u))
-    
-    visited = [False for _ in range(n + 1)]
-    distance = [float("inf") for _ in range(n + 1)]
-    distance[s] = 0
-    minHeap = [(distance[s], s)]
-    
-    while minHeap:
-        d, u = heappop(minHeap)
-        if visited[u]:
-            continue
-        visited[u] = True
-        for w, v in graph[u]:
-            if not visited[v] and distance[v] > d + w:
-                distance[v] = d + w
-                heappush(minHeap, (distance[v], v))
-    del distance[s]
-    del distance[0]
-    return [-1 if d == float("inf") else d for d in distance]
+test_graph = [[1, 2, 5],
+              [2, 3, 6],
+              [3, 4, 5],
+              [1, 3, 15]]
 
-shortestReach()
+final_node = 5
+    
+def shortestReach(graph, final_node):
+    # return a list of the starting points
+    starting = []
+    ending = []
+    weights = []
+    length = 0
+    route = []
+    counter = 1
+    
+    for i in range(0, len(graph)):
+        starting.append(graph[i][0])
+        ending.append(graph[i][1])
+        weights.append(graph[i][2])
+
+    # get the starting point using min
+    starting_node = min(min(starting), min(ending))
+    ending_node = max(max(starting), max(ending))
+    print(starting_node)
+    print(ending_node)
+
+    temp_start = starting_node
+    temp_end = 0
+    temp_weight = 0
+    pointer = 0
+    while temp_start < ending_node:
+        if graph[pointer][0] == temp_start:
+            if graph[pointer][2] < temp_weight:
+                temp_weight += graph[pointer][2]
+                temp_start = graph[pointer][1]
+                pointer += 1
+                if graph[pointer][1] > temp_end:
+                    temp_end = graph[pointer][1]
+                if graph[pointer][1] == temp_end:
+                    if weigh
+        elif graph[pointer][1] == temp_start:
+            if graph[pointer][2] < temp_weight:
+                temp_weight += graph[pointer][2]
+                temp_start = graph[pointer][1]
+                pointer += 1

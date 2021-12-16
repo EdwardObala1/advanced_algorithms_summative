@@ -1,7 +1,20 @@
 encryption
-    I would first using a loop that goes through the whole string
-        I would isntantiate two list that would each represent the first element and the second one 
-        the loop would then add the put all the odd numbers in the first 
+    create a storage size variable according to the number of keys
+    initialise a counter
+    loop through the list
+        if the counter == key
+            counter is set as zero and add charachter to the initial storage idex zero
+        elif counter < key
+            add the charachter to the index === counter
+            add one to counter
+        perform a join to the storage to return a joined encrypted text
 
 decryption
-    the same loop would then 
+    divide the encrypted text by the key value to get the length of each group
+    initialise two pointer one alwasy at the first index of each group the other one at the last index of the next group
+    initialise a for loop in the range of the length of each group
+        in the for loop pick the charachter and then add the next corresponding one within each group 
+        to decrypt the text 
+
+        the time complexity of this is o(n) + o(n)
+        the space complexity is o(1) as no additional and growing storage is used

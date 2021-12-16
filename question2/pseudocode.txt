@@ -1,4 +1,4 @@
-giben a list of grades as array
+given a list of grades as array
 
 the algorithsm loops through each value in the array and picks each value up
     I will then instantiate a new array of integers to hold the new grades
