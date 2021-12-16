@@ -1,0 +1,7 @@
+encryption
+    I would first using a loop that goes through the whole string
+        I would isntantiate two list that would each represent the first element and the second one 
+        the loop would then add the put all the odd numbers in the first 
+
+decryption
+    the same loop would then 
